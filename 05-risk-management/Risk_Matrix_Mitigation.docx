@@ -1,0 +1,53 @@
+HealthFirst Care — Risk Mitigation Plan | v1.0 | May 2026
+
+**HealthFirst Care**
+
+Operational Efficiency Enhancement Initiative
+
+**Risk Mitigation Plan**
+
+*Mitigation Strategies · Contingency Plans*
+
+Version 1.0  |  May 2026
+
+Prepared By: KRISHNA VISHWAKARMA
+
+Department of Business Administration
+
+# **1. Document Overview**
+
+This Risk Mitigation Plan builds on the Risk Register and SWOT Analysis to develop proactive mitigation strategies and reactive contingency plans for the highest-priority risks facing the HealthFirst Care Operational Efficiency Enhancement Initiative. It focuses on the five High-severity risks (R-01 to R-05) identified through likelihood-and-impact assessment.
+
+Mitigation strategies reduce the likelihood or impact of a risk before it occurs. Contingency plans define the recovery actions taken if a risk materializes despite mitigation, including steps to minimize disruption and recovery timelines.
+
+# **2. Mitigation Strategies**
+
+The table below updates the Risk Matrix for all High-severity risks, adding a dedicated Mitigation Strategy column. These proactive actions are traceable to the WBS work packages and RTM requirements.
+
+| **Risk ID** | **Risk Description** | **Likelihood** | **Impact** | **Severity** | **Mitigation Strategy** |
+| --- | --- | --- | --- | --- | --- |
+| **R-01** | Integration with outdated legacy scheduling and records systems delays development and introduces data-migration errors. | High | High | **High** | Conduct an early legacy-system audit; allocate buffer time in WBS 1.3; perform phased data migration with validation checkpoints and pre-deployment integration testing (NFR-03). |
+| **R-02** | Cloud-based systems fail or underperform due to the hospital's frequent network downtimes. | High | High | **High** | Stabilize and upgrade network infrastructure as a go-live prerequisite; add redundant connectivity; build offline fallback for kiosks and scheduling (NFR-02, NFR-05). |
+| **R-03** | Legacy security vulnerabilities remain unpatched, causing a patient-data breach. | Medium | High | **High** | Conduct regular security audits and enforce encryption protocols; patch all legacy vulnerabilities before go-live; run penetration testing (NFR-03, NFR-06). |
+| **R-04** | Staff resistance to new workflows slows adoption and reduces system utilization. | High | Medium | **High** | Schedule comprehensive training programs and regular feedback sessions; involve Key Players early; appoint adoption champions per department (WBS 1.4.5–1.4.7). |
+| **R-05** | Project exceeds the approved capital expenditure budget, forcing scope cuts. | Medium | High | **High** | Apply a phased rollout; track budget bi-weekly; require CCB approval for any budget-impacting change; hold a contingency reserve. |
+
+# **3. Contingency Plans**
+
+For each High-priority risk, the contingency plan below outlines the reactive steps to manage the risk if it materializes, including disruption-minimizing actions and recovery timelines.
+
+| **Risk ID** | **Contingency Plan** |
+| --- | --- |
+| **R-01** | If legacy integration fails or migration corrupts records, roll back to the staged backup, isolate the affected module, and run reconciliation. Engage a specialized integration vendor; extend the development phase via a CCB-approved schedule revision. Recovery target: 5 business days. |
+| **R-02** | If the network fails at or after go-live, switch kiosks and scheduling to offline mode and queue transactions locally for sync. Activate redundant connectivity and notify IT immediately. Recovery target: 24 hours; resume cloud sync once stability is confirmed. |
+| **R-03** | In case of a data breach, immediately isolate affected systems and notify the IT team and Compliance. Conduct root-cause analysis, implement emergency fixes, reset credentials, and follow the regulatory breach-notification process (NFR-06). Recovery target: 48 hours to containment. |
+| **R-04** | If staff resistance persists, introduce champions from key departments to facilitate adoption, provide additional hands-on training and support, and gather feedback to address pain points. Escalate persistent blockers to Hospital Management. Recovery target: within 4 weeks of go-live. |
+| **R-05** | If the budget is exceeded, freeze non-critical scope items, re-sequence the phased rollout to defer lower-priority modules, and draw on the contingency reserve. Submit a revised budget to Hospital Management for veto/approval. Recovery target: next bi-weekly budget cycle. |
+
+# **4. Plan Summary**
+
+Together, the mitigation strategies and contingency plans ensure the project remains resilient against disruption while staying aligned with its goals of improving operational efficiency and patient satisfaction. Mitigation reduces exposure before risks occur; contingency planning ensures rapid recovery if they do.
+
+High-priority risks are reviewed at every milestone gate (M1–M5). Any new or escalating risk is routed through the formal change-control process and reported to Hospital Management in the bi-weekly KPI updates, ensuring continuous, proactive risk governance throughout the 12-month project timeline.
+
+Prepared by KRISHNA VISHWAKARMA   |   Page

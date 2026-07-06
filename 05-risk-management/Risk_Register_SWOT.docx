@@ -1,0 +1,71 @@
+HealthFirst Care — Risk Management Plan | v1.0 | May 2026
+
+**HealthFirst Care**
+
+Operational Efficiency Enhancement Initiative
+
+**Risk Management Plan**
+
+*Risk Register · Risk Assessment Matrix · SWOT Analysis*
+
+Version 1.0  |  May 2026
+
+Prepared By: KRISHNA VISHWAKARMA
+
+Department of Business Administration
+
+# **1. Document Overview**
+
+This Risk Management Plan identifies, evaluates, and prioritizes the risks facing the HealthFirst Care Operational Efficiency Enhancement Initiative. Risks are derived directly from the constraints, assumptions, and data findings established in the Business Requirements Document (BRD), the Requirements Traceability Matrix (RTM), and the Process Model and Stakeholder analyses.
+
+It contains three deliverables: a Risk Register documenting each risk and its mitigation strategy; a Risk Assessment Matrix prioritizing risks by likelihood and impact; and a SWOT Analysis summarizing the project's strategic strengths, weaknesses, opportunities, and threats.
+
+# **2. Risk Register**
+
+Risks are categorized as Operational, Technical, or Stakeholder. Severity is the product of Likelihood and Impact and is color-coded: High (red), Medium (yellow), Low (green).
+
+| **Risk ID** | **Risk Description** | **Category** | **Likelihood** | **Impact** | **Severity** | **Mitigation Strategy** |
+| --- | --- | --- | --- | --- | --- | --- |
+| **R-01** | Integration with outdated legacy scheduling and records systems delays development and introduces data-migration errors. | Technical | High | High | **High** | Conduct early legacy-system audit; allocate buffer time in WBS 1.3; run phased data migration with validation checkpoints (NFR-03). |
+| **R-02** | Cloud-based systems fail or underperform due to the hospital's frequent network downtimes. | Technical | High | High | **High** | Stabilize/upgrade network infrastructure as a go-live prerequisite; add redundant connectivity and offline fallback for kiosks. |
+| **R-03** | Legacy security vulnerabilities remain unpatched, causing a patient-data breach. | Technical | Medium | High | **High** | Patch all legacy vulnerabilities before go-live; encrypt data at rest and in transit; run penetration test (NFR-03, NFR-06). |
+| **R-04** | Staff resistance to new workflows slows adoption and reduces system utilization. | Stakeholder | High | Medium | **High** | Structured change management; early Key-Player involvement; role-based training (WBS 1.4.5–1.4.7); adoption champions per department. |
+| **R-05** | Project exceeds the approved capital expenditure budget, forcing scope cuts. | Operational | Medium | High | **High** | Phased rollout; bi-weekly budget tracking; CCB approval for any budget-impacting change; contingency reserve. |
+| **R-06** | 12-month timeline slips due to dependencies and integration complexity. | Operational | Medium | Medium | **Medium** | Milestone gates (M1–M5); critical-path monitoring; weekly status reviews; escalate slippage to Hospital Management within 48 hrs. |
+| **R-07** | Elderly / low-digital-literacy patients struggle with self-service booking and kiosks, limiting adoption. | Stakeholder | Medium | Medium | **Medium** | Accessible UI design (NFR-04); retain in-person/phone option; usability testing with 5+ elderly users (TC-14); on-site kiosk assistance. |
+| **R-08** | Existing patient data is lost or corrupted during migration to the new HIS. | Technical | Low | High | **Medium** | Full backup before migration; validation reconciliation post-migration; staged cut-over with rollback plan (WBS 1.4.8). |
+| **R-09** | Inaccurate or incomplete source data weakens scheduling and analytics outputs. | Operational | Medium | Low | **Low** | Data-quality cleansing before go-live; address 9 missing-time-slot records; ongoing validation rules at point of entry. |
+| **R-10** | Departments adopt the communication portal unevenly, leaving coordination gaps. | Stakeholder | Low | Medium | **Low** | Mandate 100% portal use within 3 months; track adoption in KPI reports; reinforce via weekly Key-Player meetings. |
+
+*Summary: 5 High-severity, 3 Medium-severity, and 2 Low-severity risks identified across 10 risk items.*
+
+# **3. Risk Assessment Matrix**
+
+The 3×3 matrix plots each risk by Likelihood (vertical) against Impact (horizontal). Cell color reflects severity and the required management response.
+
+|  | **Low Impact** | **Medium Impact** | **High Impact** |
+| --- | --- | --- | --- |
+| **High Likelihood** | **Medium** | **High** **R-04** | **High** **R-01, R-02** |
+| **Medium Likelihood** | **Low** **R-09** | **Medium** **R-06, R-07** | **High** **R-03, R-05** |
+| **Low Likelihood** | **Low** | **Low** **R-10** | **Medium** **R-08** |
+
+**Priority Legend**
+
+| **High — Immediate attention** | **Medium — Monitor and manage** | **Low — Regular review** |
+| --- | --- | --- |
+
+High-priority risks (R-01, R-02, R-03, R-04, R-05) require immediate attention and active mitigation. Medium risks (R-06, R-07, R-08) are monitored and managed; low risks (R-09, R-10) are reviewed regularly.
+
+# **4. SWOT Analysis**
+
+The SWOT analysis provides a strategic overview of the initiative's internal strengths and weaknesses alongside its external opportunities and threats.
+
+| **Strengths** Strong management sponsorship and committed project funding Reliable data foundation — 646 analyzed records across appointments, feedback, resources Clear, traceable requirements (BRD + RTM) tied to measurable objectives Engaged Key Players (doctors, nurses, admin) validating workflows | **Weaknesses** Manual, phone-based workflows with no conflict detection Fragmented data silos across six departments Outdated legacy systems with known security vulnerabilities 57% resource operability and a 73% appointment non-completion rate |
+| --- | --- |
+| **Opportunities** Process automation to cut wait times and no-shows Unified HIS integrating scheduling, records, and billing Real-time resource dashboard improving availability above 80% Staff training and self-service kiosks raising patient satisfaction | **Threats** Data breach from unpatched legacy vulnerabilities Network downtime disrupting cloud-based services Staff resistance limiting adoption of new workflows Budget or timeline overruns forcing scope reduction |
+
+# **5. Risk Mitigation Summary**
+
+Proactive risk management is critical to project success. The highest-priority threats — legacy integration, network instability, data security, staff resistance, and budget pressure — each have a defined mitigation owner and strategy traceable to the WBS and RTM. Risks are reviewed at every milestone gate (M1–M5), with new or escalating risks routed through the formal change-control process and reported to Hospital Management in the bi-weekly KPI updates.
+
+Prepared by KRISHNA VISHWAKARMA   |   Page
